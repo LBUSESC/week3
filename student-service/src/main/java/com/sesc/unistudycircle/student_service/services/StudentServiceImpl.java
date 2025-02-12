@@ -12,6 +12,7 @@ public class StudentServiceImpl implements StudentService {
     private final StudentRepository repository;
 
     public StudentServiceImpl(StudentRepository repository) {
+
         this.repository = repository;
     }
 
@@ -46,6 +47,7 @@ public class StudentServiceImpl implements StudentService {
     }
 
     public List<Student> getAllStudents() {
+
         return repository.findAll();
     }
 }
